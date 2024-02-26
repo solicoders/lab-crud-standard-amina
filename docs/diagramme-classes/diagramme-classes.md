@@ -7,7 +7,7 @@ order: 5
 
 # Diagramme de class
 
-![Introduction](./images/diagramme-classes.png){:width="1000px"}
+![diagramme-classes](./images/diagramme-classes.png){:width="1000px"}
 _figure: diagramme de class_
 
 <!-- new slide -->
