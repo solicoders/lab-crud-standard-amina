@@ -1,7 +1,7 @@
 ---
 layout: default
 chapitre: contexte projet
-order: 5
+order: 2
 ---
 
 
@@ -22,3 +22,5 @@ order: 5
 Pour valider cette autoformation sur Laravel, il est possible qu'il soit nécessaire de réaliser des projets concrets ou de passer des tests d'évaluation pour démontrer les connaissances acquises. Cela peut également impliquer la création et la présentation d'un projet utilisant Laravel .
 
 En résumé, le projet consiste à prouver la compétence dans l'utilisation de Laravel après avoir suivi une formation en autodidacte .
+
+<!-- new slide -->
