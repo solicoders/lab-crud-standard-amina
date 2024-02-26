@@ -1,7 +1,7 @@
 ---
 layout: default
 chapitre: conclusion
-order: 8
+order: 7
 ---
 <!-- new slide -->
 
