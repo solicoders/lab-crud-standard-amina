@@ -1,7 +1,7 @@
 ---
 layout: default
 chapitre: prérequis
-order: 2
+order: 3
 ---
 
 # Prérequis
@@ -43,3 +43,5 @@ Nous avons besoin d'un framework php comme laravel pour réaliser ce projet.
 *AdminLTE*
 
 Nous devons télécharger AdminLTE dans notre projet Laravel depuis le site officiel d'Admin LTE, ce package servira d'interface utilisateur de notre projet.
+
+<!-- new slide -->
