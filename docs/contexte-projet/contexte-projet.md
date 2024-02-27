@@ -13,7 +13,7 @@ order: 2
 # Contexte du projet
 
 ![Context projet ](./images/context-projet.png){:width="500px" }
-*Introduction*
+*Context projet*
 
 <!-- note -->
 
