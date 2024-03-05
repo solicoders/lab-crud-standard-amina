@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Repository\ModulesRepository;
+use App\Repository\ModulesRepository
 
 /*
 |--------------------------------------------------------------------------
