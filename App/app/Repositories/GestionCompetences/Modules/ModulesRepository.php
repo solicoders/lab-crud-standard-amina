@@ -1,16 +1,15 @@
 <?php
 
-namespace App\Repositories\Modules;
+namespace App\Repositories\GestionCompetences\modules;
 
-use App\Models\modules\Module;
+use App\Models\GestionCompetences\modules\Module;
 use App\Repositories\BaseRepository;
 
 class ModulesRepository extends BaseRepository {
 
-    protected $model;
 
-    public function __construct(Module $module) {
-        parent::__construct($module);
+    public function __construct(Module $Modules) {
+        parent::__construct($Modules);
     }
 
 
