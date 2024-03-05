@@ -29,3 +29,9 @@ php artisan make:model Module -m
 ```bash
 php artisan make:controller ModulesController
 ```
+
+- seeders "Module"
+
+```bash
+php artisan make:seeder SeederModules
+```
