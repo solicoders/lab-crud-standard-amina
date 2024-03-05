@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\modules;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -9,7 +9,7 @@ class Module extends Model
 {
     use HasFactory;
 
-    protected $filabble = [
+    protected $fillable = [
          'nom' , 'description'
     ];
 

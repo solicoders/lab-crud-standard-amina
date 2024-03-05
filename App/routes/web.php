@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\Module;
+use App\Models\modules\Module;
 use App\Repositories\Modules\ModulesRepository;
 
 /*
@@ -19,12 +19,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/module', function () {
+Route::get('/module/store', function () {
     $repository = new ModulesRepository(new Module);
     $data = [
         'nom' => 'Module1',
         'description' => 'tesssssst',
     ];
 
-    $repository->create($data); 
+
+    $repository->create($data);
+    if($repository){
+        echo 'Insert reussir';
+    }
+
+
 });

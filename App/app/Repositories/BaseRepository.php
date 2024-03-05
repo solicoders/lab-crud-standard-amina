@@ -1,28 +1,22 @@
 <?php
 
-namespace App\Repositories\Modules;
+namespace App\Repositories;
 
 use App\Models\Module;
-use App\Repositories\BaseRepository;
-
-abstract class ModulesRepository extends BaseRepository {
+use Illuminate\Database\Eloquent\Model;
+abstract class BaseRepository {
 
     protected $model;
 
-    public function __construct(Module $module) {
-        $this->model = $module;
+    public function __construct(Model $model) {
+        $this->model = $model;
     }
 
-    protected $fieldModule = [
-        'nom', 'description'
-    ];
+   public function create($data){
+     return $this->model->create($data);
+   }
 
-    public function getFieldData(): array {
-        return $this->fieldModule;
-    }
 
-    public function model(): string {
-        return Module::class; 
-    }
+
 }
 ?>
