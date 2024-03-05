@@ -22,15 +22,13 @@ Route::get('/', function () {
 Route::get('/module/store', function () {
     $repository = new ModulesRepository(new Module);
     $data = [
-        'nom' => 'Module1',
+        'nom' => 'Module2',
         'description' => 'tesssssst',
     ];
 
 
     $repository->create($data);
-    if($repository){
-        echo 'Insert reussir';
-    }
 
+    return $data ;
 
 });
