@@ -1,24 +1,21 @@
 <?php
 
-namespace App\Repository ;
+namespace App\Repositories\Modules;
 
-use App\Models\Module ;
-use App\Repository\BaseRepository ;
+use App\Models\Module;
+use App\Repositories\BaseRepository;
 
 class ModulesRepository extends BaseRepository {
-    public function __construct(Module $module){
+
+    protected $model;
+
+    public function __construct(Module $module) {
         $this->model = $module;
     }
-    protected $filedModule = [
-        'nom' , 'description'
+
+    protected $fieldModule = [
+        'nom', 'description'
     ];
 
-    public function getFieldData() : array {
-        return $this -> $filedModule ;
-
-    }
-    public function model():string{
-        return Project::class;
-    }
 }
 ?>
