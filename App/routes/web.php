@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Repository\ModulesRepository;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/module', function () {
+    $repository = new ModulesRepository(new Modules);
+    $data = [
+        'nom' => 'Module1' ,
+        'description' => 'tesssssst',
+
+    ];
 });

@@ -23,3 +23,9 @@ php artisan migrate
 ```bash
 php artisan make:model Module -m
 ```
+
+- Controller "Module"
+
+```bash
+php artisan make:controller ModulesController
+```
