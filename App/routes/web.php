@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\modules\Module;
-use App\Repositories\Modules\ModulesRepository;
+use App\Models\GestionCompetences\modules\Module;
+use App\Repositories\GestionCompetences\Modules\ModulesRepository;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,12 +22,12 @@ Route::get('/', function () {
 Route::get('/module/store', function () {
     $repository = new ModulesRepository(new Module);
     $data = [
-        'nom' => 'Module2',
-        'description' => 'tesssssst',
+        'nom' => 'Module3',
+        'description' => 'tesssssst3',
     ];
 
 
-    $repository->create($data);
+    $repository->store($data);
 
     return $data ;
 
