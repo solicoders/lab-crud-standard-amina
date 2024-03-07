@@ -36,19 +36,54 @@ Route::get('/', function () {
 // });
 
 
-Route::get('/competence/store', function () {
+// Route::get('/competence/store', function () {
+//     $repository = new CompetencesRepository(new Competence);
+//     $data = [
+//         'nom' => 'C1',
+//         'description' => 'test',
+//         'reference' => 'code',
+//         'code' => 'Codage',
+//         'moduleId' => 1,
+//     ];
+
+
+//     $repository->store($data);
+
+//     return $data ;
+
+// });
+
+
+// Route::get('/Competence/update', function () {
+//     $repository = new CompetencesRepository(new Competence);
+//     $validatedData = [
+//         'nom' => 'C5',
+//         'description' => 'test',
+//         'reference' => 'code',
+//         'code' => 'Codage',
+//         'moduleId' => 1,
+//     ];
+
+//     $update = $repository->update(1, $validatedData);
+
+//     if ($update) {
+//         echo 'updated';
+//     }
+
+//     $repository->store($validatedData);
+
+//     return $validatedData;
+// });
+
+
+
+Route::get('/Competence/{id}', function ($id) {
     $repository = new CompetencesRepository(new Competence);
-    $data = [
-        'nom' => 'C1',
-        'description' => 'test',
-        'reference' => 'code',
-        'code' => 'Codage',
-        'moduleId' => 1,
-    ];
-
-
-    $repository->store($data);
-
-    return $data ;
-
+    $delete = $repository->destroy($id);
+    if($delete){
+        echo 'deleted';
+    }else{
+        echo 'failed';
+    }
 });
+
