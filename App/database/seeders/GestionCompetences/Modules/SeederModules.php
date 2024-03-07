@@ -1,10 +1,11 @@
 <?php
 
-namespace Database\Seeders;
+namespace Database\Seeders\GestionCompetences\Modules;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Module;
+use App\Models\GestionCompetences\modules\Module;
+
 
 class SeederModules extends Seeder
 {
