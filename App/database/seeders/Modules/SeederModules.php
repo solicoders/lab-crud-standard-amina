@@ -20,7 +20,7 @@ class SeederModules extends Seeder
             $modulesData = [
                 [
                     'nom' => 'Module 1',
-                    'description' => 'Description for Module 1',
+                    'description' => 'Description for  Module 1',
                 ],
                 [
                     'nom' => 'Module 2',
