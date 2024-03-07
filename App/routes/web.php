@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Models\GestionCompetences\modules\Module;
 use App\Repositories\GestionCompetences\Modules\ModulesRepository;
+use App\Repositories\GestionCompetences\Competences\CompetencesRepository;
+use App\Models\GestionCompetences\Competences\Competence;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,11 +21,29 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/module/store', function () {
-    $repository = new ModulesRepository(new Module);
+// Route::get('/module/store', function () {
+//     $repository = new ModulesRepository(new Module);
+//     $data = [
+//         'nom' => 'Module3',
+//         'description' => 'tesssssst3',
+//     ];
+
+
+//     $repository->store($data);
+
+//     return $data ;
+
+// });
+
+
+Route::get('/competence/store', function () {
+    $repository = new CompetencesRepository(new Competence);
     $data = [
-        'nom' => 'Module3',
-        'description' => 'tesssssst3',
+        'nom' => 'C1',
+        'description' => 'test',
+        'reference' => 'code',
+        'code' => 'Codage',
+        'moduleId' => 1,
     ];
 
 
